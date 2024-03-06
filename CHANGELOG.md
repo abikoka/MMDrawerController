@@ -1,5 +1,5 @@
 #MMDrawerController Changelog
-##[0.6.0](https://github.com/mutualmobile/MMDrawerController/issues?q=milestone%3A0.6.0+is%3Aclosed) (Thursday, April 2, 2015)
+##[0.6.1](https://github.com/abikoka/MMDrawerController/issues?q=milestone%3A0.6.1+is%3Aclosed) (Thursday, April 2, 2015)
 ###New
 * **Removed iOS 6 support** ([#350](https://github.com/mutualmobile/MMDrawerController/pull/350))([#356](https://github.com/mutualmobile/MMDrawerController/pull/356)) (Kevin Harwood, podkovyrin)
 * **Migrated from id to instancetype** ([#349](https://github.com/mutualmobile/MMDrawerController/pull/349)) (Kevin Harwood)
