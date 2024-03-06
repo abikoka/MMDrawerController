@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/mutualmobile/MMDrawerController"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Kevin Harwood" => "kevin.harwood@mutualmobile.com" }
-  s.source       = { :git => "https://github.com/mutualmobile/MMDrawerController.git", :tag => "0.6.0" }
+  s.source       = { :git => "https://github.com/abikoka/MMDrawerController.git", :tag => "0.6.0" }
   s.platform     = :ios, '7.0'
   s.requires_arc = true
   s.screenshots = [ "http://mutualmobile.github.io/MMDrawerController/ExampleImages/example1.png",
@@ -14,20 +14,24 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |ss|
     ss.source_files = 'MMDrawerController/MMDrawerController.{h,m}', 'MMDrawerController/UIViewController+MMDrawerController*'
     ss.framework  = 'QuartzCore'
+    ss.resource_bundles = {'MMDrawerController' => ['MMDrawerController/PrivacyInfo.xcprivacy']}
   end
   
   s.subspec 'MMDrawerBarButtonItem' do |ss|
       ss.source_files = 'MMDrawerController/MMDrawerBarButtonItem.{h,m}'
+      ss.resource_bundles = {'MMDrawerController' => ['MMDrawerController/PrivacyInfo.xcprivacy']}
       ss.dependency 'MMDrawerController/Core'
     end
     
   s.subspec 'MMDrawerVisualStates' do |ss|
       ss.source_files = 'MMDrawerController/MMDrawerVisualState.{h,m}'
       ss.dependency 'MMDrawerController/Core'
+      ss.resource_bundles = {'MMDrawerController' => ['MMDrawerController/PrivacyInfo.xcprivacy']}
     end
     
   s.subspec 'Subclass' do |ss|
       ss.source_files = 'MMDrawerController/MMDrawerController+Subclass.h'
       ss.dependency 'MMDrawerController/Core'
+      ss.resource_bundles = {'MMDrawerController' => ['MMDrawerController/PrivacyInfo.xcprivacy']}
   end
 end
