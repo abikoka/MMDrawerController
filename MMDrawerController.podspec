@@ -20,7 +20,6 @@ Pod::Spec.new do |s|
   s.subspec 'MMDrawerBarButtonItem' do |ss|
       ss.source_files = 'MMDrawerController/MMDrawerBarButtonItem.{h,m}'
       ss.resources = ['MMDrawerController/PrivacyInfo.xcprivacy']
-  end
       ss.dependency 'MMDrawerController/Core'
     end
     
