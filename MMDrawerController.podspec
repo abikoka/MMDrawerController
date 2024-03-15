@@ -14,24 +14,25 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |ss|
     ss.source_files = 'MMDrawerController/MMDrawerController.{h,m}', 'MMDrawerController/UIViewController+MMDrawerController*'
     ss.framework  = 'QuartzCore'
-    ss.resource_bundles = {'MMDrawerController' => ['MMDrawerController/PrivacyInfo.xcprivacy']}
+    ss.resources = ['MMDrawerController/PrivacyInfo.xcprivacy']
   end
   
   s.subspec 'MMDrawerBarButtonItem' do |ss|
       ss.source_files = 'MMDrawerController/MMDrawerBarButtonItem.{h,m}'
-      ss.resource_bundles = {'MMDrawerController' => ['MMDrawerController/PrivacyInfo.xcprivacy']}
+      ss.resources = ['MMDrawerController/PrivacyInfo.xcprivacy']
+  end
       ss.dependency 'MMDrawerController/Core'
     end
     
   s.subspec 'MMDrawerVisualStates' do |ss|
       ss.source_files = 'MMDrawerController/MMDrawerVisualState.{h,m}'
       ss.dependency 'MMDrawerController/Core'
-      ss.resource_bundles = {'MMDrawerController' => ['MMDrawerController/PrivacyInfo.xcprivacy']}
+      ss.resources = ['MMDrawerController/PrivacyInfo.xcprivacy']
     end
     
   s.subspec 'Subclass' do |ss|
       ss.source_files = 'MMDrawerController/MMDrawerController+Subclass.h'
       ss.dependency 'MMDrawerController/Core'
-      ss.resource_bundles = {'MMDrawerController' => ['MMDrawerController/PrivacyInfo.xcprivacy']}
+      ss.resources = ['MMDrawerController/PrivacyInfo.xcprivacy']
   end
 end
