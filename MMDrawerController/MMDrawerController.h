@@ -20,9 +20,6 @@
 
 
 #import <UIKit/UIKit.h>
-#import "UIViewController+MMDrawerController.h"
-#import "MMDrawerBarButtonItem.h"
-#import "MMDrawerVisualState.h"
 
 /**
  `MMDrawerController` is a side drawer navigation container view controller designed to support the growing number of applications that leverage the side drawer paradigm. This library is designed to exclusively support side drawer navigation in light-weight, focused approach.
@@ -456,3 +453,7 @@ typedef void (^MMDrawerControllerDrawerVisualStateBlock)(MMDrawerController * dr
 -(void)setGestureShouldRecognizeTouchBlock:(BOOL(^)(MMDrawerController * drawerController, UIGestureRecognizer * gesture, UITouch * touch))gestureShouldRecognizeTouchBlock;
 
 @end
+
+#import "UIViewController+MMDrawerController.h"
+#import "MMDrawerBarButtonItem.h"
+#import "MMDrawerVisualState.h"

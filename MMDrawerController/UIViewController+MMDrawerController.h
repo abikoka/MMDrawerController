@@ -20,7 +20,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "MMDrawerController.h"
+@class MMDrawerController;
 
 /**
  A helper category on `UIViewController` that exposes the parent drawer controller, the visible side drawer frame, and a `mm_drawerWillAppear` method that is called when the drawer is about to appear.
